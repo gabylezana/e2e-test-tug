@@ -1,0 +1,20 @@
+{
+  "name": "e2e-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proyecto de pruebas E2E con Playwright para tuGerente",
+  "scripts": {
+    "test": "playwright test",
+    "test:local": "dotenv -e .env.local -- playwright test",
+    "test:stg": "dotenv -e .env.staging -- playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "dotenv-cli": "^7.4.2",
+    "typescript": "^5.7.2"
+  }
+}
